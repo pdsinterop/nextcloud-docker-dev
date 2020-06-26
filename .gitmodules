@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/nextcloud/server.git
+[submodule "solid-nextcloud"]
+	path = solid-nextcloud
+	url = https://github.com/pdsinterop/solid-nextcloud.git
