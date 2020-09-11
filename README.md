@@ -8,11 +8,9 @@ Forken from https://github.com/juliushaertl/nextcloud-docker-dev.git
 
 ## Getting started
 
-### Get the code
+### Get the code + submodules
 ```
-git clone https://github.com/pdsinterop/nextcloud-docker-dev.git
-cd nextcloud-docker-dev
-git submodule update -- init --recursive
+git clone --recursive https://github.com/pdsinterop/nextcloud-docker-dev.git
 ```
 
 ### Environment variables
