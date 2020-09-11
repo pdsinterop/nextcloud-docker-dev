@@ -12,7 +12,7 @@ Forken from https://github.com/juliushaertl/nextcloud-docker-dev.git
 ```
 git clone https://github.com/pdsinterop/nextcloud-docker-dev.git
 cd nextcloud-docker-dev
-git submodule init --update --recursive
+git submodule update -- init --recursive
 ```
 
 ### Environment variables
