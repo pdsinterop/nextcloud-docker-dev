@@ -48,8 +48,8 @@ services:
     image: juliushaertl/nextcloud-dev:php7.3
     environment:
       # SQL: 'sqlite'
-      SQL: 'mysql'
-      #SQL: 'pgsql'
+      # SQL: 'mysql'
+      SQL: 'pgsql'
       NEXTCLOUD_AUTOINSTALL: "YES"
       NEXTCLOUD_AUTOINSTALL_APPS:
       WITH_REDIS: "YES"
@@ -69,8 +69,8 @@ services:
     ports:
       - "${PORTBASE:-800}0:80"
     depends_on:
-      - database-mysql
-      #- database-postgres
+      #- database-mysql
+      - database-postgres
       - redis
       - mail
 
