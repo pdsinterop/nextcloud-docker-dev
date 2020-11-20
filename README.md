@@ -1,10 +1,19 @@
 # nextcloud-dev-docker-compose
 
 Nextcloud development environment using docker-compose
-Forken from https://github.com/juliushaertl/nextcloud-docker-dev.git
+Forked from https://github.com/juliushaertl/nextcloud-docker-dev.git
 
 ⚠ **DO NOT USE THIS IN PRODUCTION** Various settings in this setup are considered insecure and default passwords and secrets are used all over the place
 
+
+TL;DR version:
+
+```
+git clone --recursive https://github.com/pdsinterop/nextcloud-docker-dev.git nextcloud-docker-dev
+cd $_
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout  nextcloud.local.key -out nextcloud.local.crt
+docker-compose --env-file=docker-compose.example.env up
+```
 
 ## Getting started
 
